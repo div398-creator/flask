@@ -9,7 +9,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Create the SQLAlchemy db instance
 db = SQLAlchemy(app)
-    
+       
 # Define a model for the items
 class Item(db.Model):
     id = db.Column(db.Integer, primary_key=True)

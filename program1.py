@@ -11,7 +11,7 @@ def create():
     new_item = request.json
     data_store.append(new_item)
     return jsonify(new_item), 201
-
+   
 # Read operation: Get all items from the data store
 @app.route('/read', methods=['GET'])
 def read():
