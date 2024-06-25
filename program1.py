@@ -5,7 +5,7 @@ app = Flask(__name__)
 # In-memory list to store data
 data_store = []
  
-# Create  operation: Add a new item to the data store
+# Create operation: Add a new item to the data store
 @app.route('/create', methods=['POST'])
 def create():
     new_item = request.json
